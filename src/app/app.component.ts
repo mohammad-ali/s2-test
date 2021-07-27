@@ -6,5 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 's2';
+  
+  posts = [{
+    title : 'red',
+    imageUrl:'assets/images/1.jpg',
+    content:'this is red'
+  },
+  {
+    title : 'yellow',
+    imageUrl:'assets/images/2.jpg',
+    content:'this is yellow'
+  },
+  {
+    title : 'blue',
+    imageUrl:'assets/images/3.jpg',
+    content:'this is blue'
+  }
+];
+
+getdata(){
+  return this.posts;
+}
+
 }
